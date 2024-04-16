@@ -2,3 +2,7 @@
 .vscode
 bin
 lib
+.interp
+.tokens
+Task7Lexer.java
+Task7Parser.java
