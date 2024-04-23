@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @name Jane Smith
+ * @name Abdullah Ahmad Fouad
  * @id 49-2554
  * @labNumber 16
  */
