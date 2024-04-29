@@ -83,7 +83,6 @@ public class CfgLl1Parser {
 		initializeFirsts(input);
 		initializeFollows(input);
 		buildParseTable();
-		System.out.println(parseTable);
 	}
 
 	private void initializeFollows(String input) {

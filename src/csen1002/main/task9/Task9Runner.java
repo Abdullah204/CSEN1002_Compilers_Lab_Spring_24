@@ -18,8 +18,4 @@ public class Task9Runner {
         return parser.s().check;
     }
 
-    public static void main(String[] args) {
-        System.out.println(sCheckValue("10#01"));
-        System.out.println(sCheckValue("11#01"));
-    }
 }

@@ -50,12 +50,7 @@ public class CfgEpsUnitElim {
 	private void addNewEpsilons(String left) {
 		for (int i = 0; i < rules.size(); i++) {
 			ArrayList<String> right = rules.get(i).right;
-			if (rules.get(i).left.equals("X") && left.equals("G")) {
-				System.out.println(right.contains(left));
-				System.out.println(!removedEpsilons.contains(rules.get(i).left));
-				System.out.println(!right.contains("e"));
 
-			}
 			if (right.contains(left) && !removedEpsilons.contains(rules.get(i).left) && !right.contains("e")) {
 				rules.get(i).right.add("e");
 			}

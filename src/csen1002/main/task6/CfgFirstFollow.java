@@ -235,7 +235,6 @@ public class CfgFirstFollow {
 		}
 
 		public boolean addDollar(FF left) {
-			System.out.println("Adding dollar to " + this + " from " + left);
 			if (left.hasDollar && !this.hasDollar) {
 				this.hasDollar = true;
 				return true;

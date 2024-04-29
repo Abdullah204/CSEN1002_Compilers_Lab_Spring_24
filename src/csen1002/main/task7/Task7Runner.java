@@ -35,8 +35,4 @@ public class Task7Runner {
         return stringJoiner.toString();
     }
 
-    public static void main(String[] args) {
-        System.out.println(tokenStream("1110"));
-    }
-
 }
