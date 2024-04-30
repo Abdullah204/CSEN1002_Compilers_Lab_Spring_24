@@ -95,8 +95,9 @@ public class CfgLl1Parser {
 	private void initializeFirsts(String input) {
 		firsts = new ArrayList<Rule>(Arrays.stream(input.split("#")[3].split(";"))
 				.map(ruleStr -> new Rule(ruleStr.split("/")[0],
-						new ArrayList<String>(Arrays.asList(ruleStr.split("/")[1].split(",")))))
+						new ArrayList<String>(Arrays.asList(ruleStr.split("/")[1].replaceAll(",", "").split("")))))
 				.toList());
+
 	}
 
 	private void initializeRules(String input) {
