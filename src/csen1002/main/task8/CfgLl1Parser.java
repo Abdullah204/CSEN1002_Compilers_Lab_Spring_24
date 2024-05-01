@@ -40,6 +40,10 @@ public class CfgLl1Parser {
 			if (i == last.length() && i == input.length())
 				break;
 			// there is a terminal that cant be matched
+			if (i >= last.length()) {
+				res.add(ERROR);
+				break;
+			}
 			String nextVariable = last.charAt(i) + "";
 			// no more input either check if variable can be replaced with epsilon or error
 			if (i >= input.length()) {
@@ -95,7 +99,8 @@ public class CfgLl1Parser {
 	private void initializeFirsts(String input) {
 		firsts = new ArrayList<Rule>(Arrays.stream(input.split("#")[3].split(";"))
 				.map(ruleStr -> new Rule(ruleStr.split("/")[0],
-						new ArrayList<String>(Arrays.asList(ruleStr.split("/")[1].replaceAll(",", "").split("")))))
+						new ArrayList<String>(Arrays.asList(ruleStr.split("/")[1].replaceAll(",",
+								"").split("")))))
 				.toList());
 
 	}
