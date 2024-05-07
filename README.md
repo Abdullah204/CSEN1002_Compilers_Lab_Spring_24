@@ -1,3 +1,12 @@
+This Repo contains solutions for tasks assigned in the course `CSEN 1002 Advanced Computer Lab (Compilers Lab)` at the `GUC` `(German University in Cairo)`.  
+You are welcome to contribute with private test case files.
+
+
+
+
+
+
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
